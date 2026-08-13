@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Login | PACE Academy</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body class="auth-page">
+  <section class="auth-intro">
+    <div class="brand">
+      <img src="../logo.png" alt="PACE Academy logo">
+      <span>PACE ACADEMY</span>
+    </div>
+    <h1>Manage learning content with clarity.</h1>
+    <p>Sign in to publish, update and organize educational content for PACE Academy.</p>
+  </section>
+
+  <main class="auth-panel">
+    <section class="auth-card" aria-labelledby="loginHeading">
+      <p class="eyebrow">Admin portal</p>
+      <h2 id="loginHeading">Welcome back</h2>
+      <p>Use your administrator account to continue.</p>
+
+      <div id="loginMessage" class="message" role="alert" aria-live="polite"></div>
+
+      <form id="loginForm" novalidate>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" type="email" autocomplete="email" required>
+        </div>
+
+        <div class="field" style="margin-top: 18px;">
+          <label for="password">Password</label>
+          <input id="password" type="password" autocomplete="current-password" required>
+        </div>
+
+        <button class="button button-primary" type="submit" style="width: 100%; margin-top: 24px;">Login</button>
+      </form>
+
+      <a class="auth-footer" href="../index.html">Back to PACE Academy website</a>
+    </section>
+  </main>
+
+  <script src="admin.js"></script>
+  <script src="login.js"></script>
+</body>
+</html>

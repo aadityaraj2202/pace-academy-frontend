@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes | PACE Academy</title>
+    <link rel="stylesheet" href="./content-api.css">
+</head>
+<body class="pace-page">
+    <header class="pace-site-header">
+        <a class="pace-brand" href="./index.html">
+            <img src="./logo.png" alt="PACE Academy logo">
+            <span>PACE ACADEMY</span>
+        </a>
+        <nav class="pace-site-nav" aria-label="Primary navigation">
+            <a href="./index.html">Home</a>
+            <a href="./category1law.html">Law & Judiciary</a>
+            <a href="./upse.html">UPSC</a>
+            <a href="./hpse.html">HPSC</a>
+            <a href="./currentaffairs.html">Current Affairs</a>
+        </nav>
+    </header>
+
+    <section class="pace-list-hero">
+        <h1>Study Notes</h1>
+        <p>Focused notes and revision material published by the PACE Academy team.</p>
+    </section>
+
+    <main class="pace-listing-section">
+        <h2 class="pace-listing-heading">Latest Notes</h2>
+        <div
+            class="pace-content-list"
+            data-content-category-list
+            data-category="Notes"
+            data-limit="6"
+            data-pagination-target="#notesPagination"
+        ></div>
+        <div id="notesPagination" class="pace-content-pagination"></div>
+    </main>
+
+    <footer class="pace-site-footer">© PACE Academy. Learning resources for law and competitive examinations.</footer>
+
+    <script src="./content-api.js"></script>
+    <script src="./category-content.js"></script>
+</body>
+</html>

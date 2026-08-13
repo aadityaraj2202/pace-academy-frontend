@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Current Affairs</title>
     <link rel="stylesheet" href="./currentaffairs.css">
+    <link rel="stylesheet" href="./content-api.css">
     <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
@@ -125,11 +126,12 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 
             <h2>Latest Updates</h2>
 
-            <a href="#">View All</a>
+            <span id="currentAffairsCount" class="pace-content-count"></span>
 
         </div>
 
 
+        <div hidden>
         <!-- ARTICLE 1 -->
 
         <div class="current-article">
@@ -293,6 +295,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         <button class="view-articles">
             View All Articles
         </button>
+        </div>
+
+        <div id="currentAffairsList"></div>
+        <div id="currentAffairsPagination" class="pace-content-pagination"></div>
 
     </div>
 
@@ -378,6 +384,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     </div>
 
 </section>
+<script src="./content-api.js"></script>
+<script src="./current-affairs-content.js"></script>
 </body>
 <footer class="main-footer">
 

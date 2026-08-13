@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Content | PACE Academy Admin</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="dashboard.html">
+        <img src="../logo.png" alt="PACE Academy logo">
+        <span>PACE ACADEMY</span>
+      </a>
+
+      <nav class="sidebar-nav" aria-label="Admin navigation">
+        <a href="dashboard.html">Dashboard</a>
+        <a class="active" href="content.html">Content</a>
+        <a href="add-content.html">Add Content</a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <a href="../index.html">View public website</a>
+        <button type="button" data-logout>Log out</button>
+      </div>
+    </aside>
+
+    <main class="admin-main">
+      <header class="page-header">
+        <div>
+          <p class="eyebrow">Content library</p>
+          <h1>Manage Content</h1>
+          <p class="page-subtitle">Create, update, publish and organize educational content.</p>
+        </div>
+        <div class="header-actions">
+          <button class="menu-toggle" type="button" data-sidebar-toggle>Menu</button>
+          <a class="button button-primary" href="add-content.html">Add Content</a>
+        </div>
+      </header>
+
+      <div id="contentMessage" class="message" role="alert" aria-live="polite"></div>
+
+      <section class="content-card">
+        <div class="table-wrap">
+          <table class="content-table">
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Category</th>
+                <th>Status</th>
+                <th>Created</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="contentTableBody"></tbody>
+          </table>
+        </div>
+        <div id="pagination" class="pagination"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="admin.js"></script>
+  <script src="content.js"></script>
+</body>
+</html>

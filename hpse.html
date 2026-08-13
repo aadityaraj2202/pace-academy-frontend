@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HPSE</title>
     <link rel="stylesheet" href="hpse.css">
+    <link rel="stylesheet" href="./content-api.css">
     <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     
@@ -127,7 +128,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
                 Featured Insights
             </h2>
 
-            <div class="featured-card">
+            <div class="featured-card" hidden>
 
                 <div class="featured-image">
 
@@ -159,12 +160,23 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 
             </div>
 
+            <div
+                class="pace-content-list"
+                data-content-category-list
+                data-category="HPSC"
+                data-limit="6"
+                data-pagination-target="#hpscContentPagination"
+            ></div>
+            <div id="hpscContentPagination" class="pace-content-pagination"></div>
+
         </div>
        
     </div>
 
 </section>
 
+<script src="./content-api.js"></script>
+<script src="./category-content.js"></script>
 </body>
 <footer class="main-footer">
 

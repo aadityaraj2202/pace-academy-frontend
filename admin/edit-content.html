@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Content | PACE Academy Admin</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body data-mode="edit">
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="dashboard.html">
+        <img src="../logo.png" alt="PACE Academy logo">
+        <span>PACE ACADEMY</span>
+      </a>
+
+      <nav class="sidebar-nav" aria-label="Admin navigation">
+        <a href="dashboard.html">Dashboard</a>
+        <a class="active" href="content.html">Content</a>
+        <a href="add-content.html">Add Content</a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <a href="../index.html">View public website</a>
+        <button type="button" data-logout>Log out</button>
+      </div>
+    </aside>
+
+    <main class="admin-main">
+      <header class="page-header">
+        <div>
+          <p class="eyebrow">Content library</p>
+          <h1 id="formTitle">Edit Content</h1>
+          <p id="formSubtitle" class="page-subtitle">Loading article details...</p>
+        </div>
+        <div class="header-actions">
+          <button class="menu-toggle" type="button" data-sidebar-toggle>Menu</button>
+          <a class="button button-secondary" href="content.html">Back to Content</a>
+        </div>
+      </header>
+
+      <div id="formMessage" class="message" role="alert" aria-live="polite"></div>
+
+      <form id="contentForm" class="content-card form-card" novalidate>
+        <div class="form-grid">
+          <div class="field field-full">
+            <label for="title">Title <span>*</span></label>
+            <input id="title" type="text" required>
+          </div>
+
+          <div class="field field-full">
+            <label for="shortDescription">Short Description</label>
+            <textarea id="shortDescription" placeholder="A concise summary for content listings."></textarea>
+          </div>
+
+          <div class="field field-full">
+            <label for="content">Content <span>*</span></label>
+            <textarea id="content" required placeholder="Write the article content here."></textarea>
+          </div>
+
+          <div class="field">
+            <label for="category">Category <span>*</span></label>
+            <select id="category" required>
+              <option value="">Select a category</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="status">Status</label>
+            <select id="status">
+              <option value="draft">Draft</option>
+              <option value="published">Published</option>
+            </select>
+          </div>
+
+          <div class="field field-full">
+            <label for="tags">Tags</label>
+            <input id="tags" type="text" placeholder="UPSC, Constitution, Current Affairs">
+            <p class="field-help">Separate tags with commas.</p>
+          </div>
+
+          <div class="field field-full">
+            <label for="featuredImage">Featured Image URL or Path</label>
+            <input id="featuredImage" type="text" placeholder="https://example.com/image.jpg">
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <a class="button button-secondary" href="content.html">Cancel</a>
+          <button class="button button-primary" type="submit">Save Changes</button>
+        </div>
+      </form>
+    </main>
+  </div>
+
+  <script src="admin.js"></script>
+  <script src="content-form.js"></script>
+</body>
+</html>
