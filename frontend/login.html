@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Login | PACEINFO</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+          href="./login.css">
+
+</head>
+
+
+<body>
+
+
+<div class="login-page">
+
+
+    <!-- LEFT SIDE -->
+
+    <div class="login-left">
+
+        <div class="brand">
+
+            <img src="./logo2.jpg"
+                 alt="PACEINFO Logo">
+
+            <div>
+
+                <h2>PACEINFO</h2>
+
+                <span>
+                    Knowledge • Preparation • Success
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="left-content">
+
+            <span class="welcome-tag">
+                WELCOME BACK
+            </span>
+
+
+            <h1>
+                Your preparation
+                <br>
+                starts <span>here.</span>
+            </h1>
+
+
+            <p>
+
+                Access your personalized dashboard,
+                current affairs, judgements, editorials,
+                study resources and exam preparation
+                materials.
+
+            </p>
+
+
+            <div class="features">
+
+                <div class="feature">
+
+                    <i class="fa-solid fa-scale-balanced"></i>
+
+                    <div>
+
+                        <h3>
+                            Law & Judiciary
+                        </h3>
+
+                        <p>
+                            Access judgements and legal resources.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="feature">
+
+                    <i class="fa-solid fa-book-open"></i>
+
+                    <div>
+
+                        <h3>
+                            UPSC & HPSC
+                        </h3>
+
+                        <p>
+                            Prepare with curated study material.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="feature">
+
+                    <i class="fa-solid fa-newspaper"></i>
+
+                    <div>
+
+                        <h3>
+                            Daily Current Affairs
+                        </h3>
+
+                        <p>
+                            Stay updated with important events.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="left-bottom">
+
+            <span>
+                © 2026 PACEINFO
+            </span>
+
+            <span>
+                Trusted Knowledge Platform
+            </span>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- RIGHT SIDE -->
+
+    <div class="login-right">
+
+
+        <div class="login-card">
+
+
+            <div class="mobile-logo">
+
+                <img src="./logo2.jpg"
+                     alt="PACEINFO">
+
+                <h2>PACEINFO</h2>
+
+            </div>
+
+
+            <div class="login-heading">
+
+                <h1>
+                    Welcome Back
+                </h1>
+
+                <p>
+                    Login to continue to your account
+                </p>
+
+            </div>
+
+
+            <!-- LOGIN FORM -->
+
+            <form>
+
+
+                <!-- EMAIL -->
+
+                <label>
+                    Email Address
+                </label>
+
+                <div class="input-box">
+
+                    <i class="fa-regular fa-envelope"></i>
+
+                    <input
+                        type="email"
+                        placeholder="Enter your email address"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- PASSWORD -->
+
+                <div class="password-label">
+
+                    <label>
+                        Password
+                    </label>
+
+                    <a href="#">
+                        Forgot Password?
+                    </a>
+
+                </div>
+
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Enter your password"
+                        required
+                    >
+
+                    <i class="fa-regular fa-eye"
+                       id="togglePassword">
+                    </i>
+
+                </div>
+
+
+                <!-- REMEMBER -->
+
+                <div class="remember">
+
+                    <label>
+
+                        <input
+                            type="checkbox"
+                        >
+
+                        <span>
+                            Remember me
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+                <!-- LOGIN BUTTON -->
+
+                <button
+                    type="submit"
+                    class="login-button">
+
+                    Login
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+
+                <!-- DIVIDER -->
+
+                <div class="divider">
+
+                    <span></span>
+
+                    <p>OR</p>
+
+                    <span></span>
+
+                </div>
+
+
+                <!-- GOOGLE -->
+
+                <button
+                    type="button"
+                    class="google-button">
+
+                    <i class="fa-brands fa-google"></i>
+
+                    Continue with Google
+
+                </button>
+
+
+                <!-- SIGN UP -->
+
+                <p class="signup">
+
+                    Don't have an account?
+
+                    <a href="#">
+                        Create Account
+                    </a>
+
+                </p>
+
+
+            </form>
+
+
+        </div>
+
+
+        <!-- FOOTER LINKS -->
+
+        <div class="login-footer">
+
+            <a href="#">
+                Privacy Policy
+            </a>
+
+            <span>|</span>
+
+            <a href="#">
+                Terms & Conditions
+            </a>
+
+            <span>|</span>
+
+            <a href="#">
+                Help
+            </a>
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+
+<!-- PASSWORD SHOW / HIDE -->
+
+<script>
+
+const togglePassword =
+    document.getElementById("togglePassword");
+
+const password =
+    document.getElementById("password");
+
+
+togglePassword.addEventListener(
+    "click",
+    function () {
+
+        const type =
+            password.getAttribute("type")
+            === "password"
+            ? "text"
+            : "password";
+
+        password.setAttribute(
+            "type",
+            type
+        );
+
+
+        this.classList.toggle(
+            "fa-eye"
+        );
+
+        this.classList.toggle(
+            "fa-eye-slash"
+        );
+
+    }
+);
+
+</script>
+
+
+</body>
+
+</html>
