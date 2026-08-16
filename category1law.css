@@ -4,131 +4,6 @@
     box-sizing: border-box;
 }
 
-body {
-    overflow-x: hidden;
-}
-
-@media (max-width: 768px) {
-    .header {
-        flex-wrap: wrap;
-        gap: 12px;
-        padding: 14px 16px;
-    }
-
-    .nav {
-        order: 3;
-        width: 100%;
-        margin-left: 0;
-        gap: 10px 18px;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .nav a {
-        font-size: 14px;
-    }
-
-    .actions {
-        margin-left: auto;
-        gap: 14px;
-    }
-
-    .logo {
-        width: 72px;
-        height: 54px;
-    }
-
-    .top-bar {
-        height: auto;
-        padding: 10px 12px;
-        font-size: 12px;
-        text-align: center;
-    }
-
-    .law-hero {
-        height: auto;
-        padding: 28px 20px;
-    }
-
-    .law-hero-content {
-        width: 100%;
-    }
-
-    .law-search {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .law-stats,
-    .category-cards {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
-
-@media (max-width: 480px) {
-    .header {
-        padding: 10px 12px;
-    }
-
-    .nav {
-        gap: 8px 12px;
-    }
-
-    .nav a {
-        font-size: 12px;
-    }
-
-    .actions {
-        gap: 8px;
-    }
-
-    .login-btn {
-        padding: 8px 14px;
-        font-size: 13px;
-    }
-
-    .law-page,
-    .category-page {
-        padding-left: 12px;
-        padding-right: 12px;
-    }
-
-    .law-hero,
-    .category-hero {
-        padding: 24px 16px;
-    }
-
-    .law-hero h1,
-    .hero-content h1 {
-        font-size: clamp(2rem, 8vw, 3rem);
-        line-height: 1.1;
-    }
-
-    .law-hero p,
-    .hero-content p {
-        font-size: 0.96rem;
-        line-height: 1.7;
-    }
-
-    .law-search,
-    .category-search {
-        width: 100%;
-        height: 52px;
-    }
-
-    .law-search button,
-    .category-search button {
-        width: 82px;
-        font-size: 14px;
-    }
-
-    .law-stats,
-    .stats,
-    .category-cards {
-        grid-template-columns: 1fr;
-    }
-}
-
 .header {
     padding: 0px 20px;
     display: flex;
@@ -136,10 +11,8 @@ body {
 }
 
 .logo {
-    height: 80px;
-    width: 100px;
-    background-color: transparent;
-    border-radius: 5px;
+    width: 150px;
+    height: 130px;
 
 }
 
@@ -829,3 +702,1007 @@ body {
     font-weight:400;
 }
 
+/* =========================================================
+   RESPONSIVE DESIGN
+   Law & Judiciary Page
+   Desktop / Laptop / Tablet / Mobile
+   ========================================================= */
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+input,
+button {
+    font-family: inherit;
+}
+
+/* =========================
+   LARGE DESKTOP
+========================= */
+@media (min-width: 1400px) {
+
+    .law-page {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .law-hero,
+    .law-stats,
+    .law-main {
+        max-width: 1400px;
+    }
+}
+
+
+/* =========================
+   LAPTOP
+========================= */
+@media (max-width: 1200px) {
+
+    .header {
+        padding: 0 15px;
+    }
+
+    .nav {
+        gap: 25px;
+        margin-left: 30px;
+    }
+
+    .nav a {
+        font-size: 16px;
+    }
+
+    .actions {
+        gap: 18px;
+    }
+
+    .law-page {
+        padding: 25px 20px 60px;
+    }
+
+    .law-hero {
+        height: 340px;
+        padding: 45px;
+    }
+
+    .law-hero-content {
+        width: min(650px, 100%);
+    }
+
+    .law-hero h1 {
+        font-size: 43px;
+    }
+
+    .law-search {
+        width: min(490px, 100%);
+    }
+
+    .law-stats {
+        gap: 15px;
+        margin-top: 45px;
+        margin-bottom: 45px;
+    }
+
+    .law-categories {
+        gap: 12px;
+    }
+
+    .law-featured-card {
+        height: 250px;
+        min-height: 250px;
+    }
+
+    .law-featured-content {
+        padding: 22px;
+    }
+
+    .law-featured-content h2 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1.3fr 1fr 1.1fr;
+        gap: 45px;
+    }
+
+    .find-us {
+        grid-column: 1 / -1;
+        max-width: 550px;
+    }
+}
+
+
+/* =========================
+   TABLET
+========================= */
+@media (max-width: 992px) {
+
+    .top-bar {
+        height: auto;
+        min-height: 40px;
+        padding: 8px 18px;
+        text-align: center;
+        flex-wrap: wrap;
+        line-height: 20px;
+    }
+
+    .header {
+        min-height: 80px;
+        padding: 8px 20px;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        width: 85px;
+        height: 70px;
+    }
+
+    .nav {
+        order: 2;
+        width: 100%;
+        margin-left: 0;
+        justify-content: center;
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+
+    .nav a {
+        font-size: 15px;
+    }
+
+    .actions {
+        margin-left: auto;
+        gap: 15px;
+    }
+
+    .actions i {
+        font-size: 19px;
+    }
+
+    .login-btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .law-page {
+        padding: 18px 20px 55px;
+    }
+
+    .law-hero {
+        height: 330px;
+        padding: 38px 35px;
+        border-radius: 16px;
+    }
+
+    .law-hero h1 {
+        font-size: 37px;
+    }
+
+    .law-hero p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .law-search {
+        width: 100%;
+        max-width: 490px;
+    }
+
+    .law-stats {
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+        margin-top: 35px;
+        margin-bottom: 40px;
+    }
+
+    .law-stat {
+        height: 100px;
+    }
+
+    .law-stat h2 {
+        font-size: 28px;
+    }
+
+    .law-categories {
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+    }
+
+    .law-category-card {
+        height: 115px;
+    }
+
+    .featured-heading {
+        margin-top: 40px;
+    }
+
+    .law-featured-card {
+        grid-template-columns: 42% 58%;
+        height: auto;
+        min-height: 250px;
+    }
+
+    .law-featured-content {
+        padding: 20px;
+    }
+
+    .law-featured-content h2 {
+        font-size: 19px;
+        line-height: 27px;
+    }
+
+    .law-featured-content p {
+        font-size: 13px;
+        line-height: 21px;
+    }
+
+    .law-featured-info {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .footer-newsletter {
+        margin: 40px 4% 55px;
+        padding: 28px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 25px;
+    }
+
+    .newsletter-form {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 45px;
+    }
+
+    .find-us {
+        grid-column: 1 / -1;
+        max-width: none;
+    }
+
+    .footer-bottom {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 768px) {
+
+    .top-bar {
+        font-size: 13px;
+        gap: 7px;
+        padding: 8px 12px;
+    }
+
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 12px 15px;
+        gap: 12px;
+    }
+
+    .logo {
+        width: 80px;
+        height: 65px;
+    }
+
+    .nav {
+        order: 0;
+        width: 100%;
+        margin-left: 0;
+        gap: 9px 17px;
+        justify-content: center;
+    }
+
+    .nav a {
+        font-size: 14px;
+    }
+
+    .actions {
+        margin-left: 0;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .actions i {
+        font-size: 18px;
+    }
+
+    .login-btn {
+        padding: 8px 17px;
+        font-size: 14px;
+    }
+
+    .law-page {
+        padding: 12px 14px 45px;
+    }
+
+    .law-hero {
+        width: 100%;
+        height: auto;
+        min-height: 390px;
+        padding: 35px 20px;
+        border-radius: 14px;
+        align-items: center;
+    }
+
+    .law-hero-content {
+        width: 100%;
+    }
+
+    .law-hero h1 {
+        font-size: 30px;
+        line-height: 38px;
+        margin-bottom: 15px;
+    }
+
+    .law-hero p {
+        font-size: 15px;
+        line-height: 24px;
+        margin-bottom: 22px;
+    }
+
+    .law-search {
+        width: 100%;
+        height: 54px;
+        padding: 0 8px;
+        border-radius: 14px;
+    }
+
+    .law-search i {
+        font-size: 18px;
+        margin: 0 9px;
+    }
+
+    .law-search input {
+        min-width: 0;
+        font-size: 14px;
+    }
+
+    .law-search button {
+        width: 82px;
+        height: 42px;
+        border-radius: 11px;
+        font-size: 13px;
+    }
+
+    .law-stats {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin-top: 30px;
+        margin-bottom: 35px;
+    }
+
+    .law-stat {
+        height: 95px;
+        border-radius: 9px;
+    }
+
+    .law-stat h2 {
+        font-size: 25px;
+    }
+
+    .law-stat p {
+        font-size: 10px;
+        letter-spacing: .5px;
+    }
+
+    .law-section-title {
+        font-size: 21px;
+        margin-bottom: 17px;
+    }
+
+    .law-categories {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .law-category-card {
+        height: 110px;
+    }
+
+    .law-category-card i {
+        font-size: 23px;
+        margin-bottom: 10px;
+    }
+
+    .law-category-card p {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .featured-heading {
+        margin-top: 35px;
+    }
+
+    .law-featured-card {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        min-height: 0;
+    }
+
+    .law-featured-image {
+        width: 100%;
+        height: 210px;
+        flex-shrink: 0;
+    }
+
+    .law-featured-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .law-featured-content {
+        padding: 20px;
+    }
+
+    .law-featured-content h2 {
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .law-featured-content p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .law-featured-info {
+        font-size: 12px;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    /* FOOTER */
+
+    .main-footer {
+        margin-top: 25px;
+    }
+
+    .footer-newsletter {
+        margin: 25px 12px 40px;
+        padding: 22px 16px;
+        gap: 20px;
+    }
+
+    .newsletter-text h3 {
+        font-size: 20px;
+    }
+
+    .newsletter-text p {
+        font-size: 14px;
+        line-height: 23px;
+    }
+
+    .newsletter-form {
+        width: 100%;
+        height: 50px;
+    }
+
+    .newsletter-form input {
+        min-width: 0;
+        font-size: 14px;
+    }
+
+    .newsletter-form button {
+        width: 105px;
+        font-size: 14px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 0 18px 45px;
+    }
+
+    .company-description {
+        max-width: 100%;
+        font-size: 15px;
+    }
+
+    .footer-logo h2 {
+        font-size: 24px;
+        line-height: 27px;
+    }
+
+    .footer-column h3 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .footer-column a {
+        font-size: 15px;
+        margin-bottom: 13px;
+    }
+
+    .important-heading {
+        margin-top: 30px !important;
+    }
+
+    .find-us {
+        width: 100%;
+    }
+
+    .map-container {
+        height: 250px;
+    }
+
+    .direction-btn {
+        width: calc(100% - 30px);
+        margin: 15px;
+    }
+
+    .footer-bottom {
+        min-height: auto;
+        padding: 20px 15px;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .footer-bottom p {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .footer-bottom > span {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .bottom-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .bottom-links a {
+        font-size: 13px;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+@media (max-width: 480px) {
+
+    .top-bar {
+        font-size: 11px;
+        line-height: 17px;
+    }
+
+    .header {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .nav {
+        gap: 8px 11px;
+    }
+
+    .nav a {
+        font-size: 12px;
+    }
+
+    .actions {
+        gap: 14px;
+    }
+
+    .law-page {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .law-hero {
+        min-height: 400px;
+        padding: 30px 14px;
+    }
+
+    .law-hero h1 {
+        font-size: 25px;
+        line-height: 32px;
+    }
+
+    .law-hero p {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    .law-search {
+        height: 50px;
+        padding: 0 6px;
+    }
+
+    .law-search i {
+        font-size: 16px;
+        margin: 0 7px;
+    }
+
+    .law-search input {
+        font-size: 12px;
+    }
+
+    .law-search button {
+        width: 70px;
+        height: 38px;
+        font-size: 12px;
+    }
+
+    .law-stats {
+        gap: 8px;
+    }
+
+    .law-stat {
+        height: 90px;
+    }
+
+    .law-stat h2 {
+        font-size: 22px;
+    }
+
+    .law-stat p {
+        font-size: 9px;
+    }
+
+    .law-section-title {
+        font-size: 19px;
+    }
+
+    .law-categories {
+        gap: 8px;
+    }
+
+    .law-category-card {
+        height: 100px;
+    }
+
+    .law-category-card i {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    .law-category-card p {
+        font-size: 11px;
+    }
+
+    .law-featured-image {
+        height: 180px;
+    }
+
+    .law-featured-content {
+        padding: 16px;
+    }
+
+    .law-featured-content h2 {
+        font-size: 19px;
+        line-height: 25px;
+    }
+
+    .law-featured-content p {
+        font-size: 13px;
+        line-height: 21px;
+    }
+
+    .newsletter-form {
+        height: auto;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .newsletter-form input,
+    .newsletter-form button {
+        width: 100%;
+        height: 48px;
+        border-radius: 7px;
+    }
+
+    .footer-content {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .map-container {
+        height: 220px;
+    }
+}
+
+/* =========================================================
+   HOME PAGE NAVBAR + FOOTER
+   Only navbar/footer changed — Law & Judiciary content untouched
+   ========================================================= */
+
+.top-bar{
+    min-height:40px;
+    padding:8px 20px;
+    background:#101a35;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:12px;
+    text-align:center;
+    font-size:16px;
+    line-height:22px;
+}
+.top-bar .new{color:#f4b53f;font-weight:800}
+.top-bar a{color:#f4c84a;font-weight:700;text-decoration:underline}
+
+.header{
+    min-height:92px;
+    padding:8px 3%;
+    display:flex;
+    align-items:center;
+    gap:25px;
+    background:#fff;
+}
+.header .logo{
+    width:150px;
+    height:120px;
+    object-fit:contain;
+}
+.nav{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:28px;
+    margin-left:0;
+}
+.nav a{
+    font-family:"Gill Sans","Gill Sans MT",Calibri,sans-serif;
+    font-size:19px;
+    font-weight:700;
+    color:#111;
+    white-space:nowrap;
+}
+.nav a:hover{
+    color:#1665ff;
+    text-decoration:underline;
+    text-underline-offset:7px;
+}
+.actions{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+.actions i{
+    font-size:23px;
+    color:#222;
+    cursor:pointer;
+}
+.actions i:hover{color:#1665ff}
+.login-btn{
+    border:0;
+    background:#0b1736;
+    color:#fff;
+    padding:11px 22px;
+    border-radius:10px;
+    font-size:16px;
+    cursor:pointer;
+}
+.login-btn:hover{background:#162a61}
+
+/* FOOTER */
+.main-footer{
+    background:#080d12;
+    color:#d7d9de;
+    margin-top:80px;
+    font-family:Arial,Helvetica,sans-serif;
+    width:100%;
+}
+.main-footer .footer-top{
+    max-width:1400px;
+    margin:0 auto;
+    padding:55px 3%;
+    display:grid;
+    grid-template-columns:1.35fr 1fr 1fr 1.25fr;
+    gap:45px;
+    align-items:start;
+}
+.main-footer .footer-brand img{
+    width:68px;height:68px;object-fit:contain;
+    background:#fff;border-radius:7px;padding:5px;
+    display:block;margin-bottom:14px;
+}
+.main-footer .footer-brand h2{
+    margin:0 0 12px;color:#e4bc3f;
+    font-family:Georgia,serif;font-size:27px;line-height:1.1;
+}
+.main-footer .footer-brand p{
+    max-width:310px;margin:0;color:#b8bdc5;
+    font-size:15px;line-height:25px;
+}
+.main-footer .footer-column{
+    display:flex;flex-direction:column;min-width:0;
+}
+.main-footer .footer-column h3,
+.main-footer .contact-column h3,
+.main-footer .app-content h3,
+.main-footer .location-section h3,
+.main-footer .social-section h3{
+    color:#fff;font-family:Georgia,serif;
+    font-size:20px;margin:0 0 20px;
+}
+.main-footer .footer-column>a{
+    color:#b8bdc5;text-decoration:none;
+    font-size:15px;line-height:22px;margin-bottom:13px;
+    transition:.2s;
+}
+.main-footer .footer-column>a:hover{
+    color:#e4bc3f;padding-left:3px;
+}
+.main-footer .footer-contact-item{
+    display:flex;align-items:flex-start;
+    gap:13px;margin-bottom:18px;
+}
+.main-footer .footer-contact-item>i{
+    color:#e4bc3f;font-size:18px;width:20px;
+    min-width:20px;margin-top:3px;
+}
+.main-footer .footer-contact-item a,
+.main-footer .footer-contact-item p{
+    color:#b8bdc5;font-size:15px;line-height:23px;
+    text-decoration:none;margin:0;
+}
+.main-footer .footer-contact-item a{
+    display:block;margin-bottom:3px;
+}
+.main-footer .footer-contact-item a:hover{color:#e4bc3f}
+
+.main-footer .footer-middle{
+    max-width:1400px;margin:0 auto;padding:32px 3%;
+    border-top:1px solid #252d35;
+    border-bottom:1px solid #252d35;
+    display:grid;grid-template-columns:1fr 1.25fr 1.35fr;
+    gap:45px;align-items:center;
+}
+.main-footer .social-section h3{margin-bottom:16px}
+.main-footer .social-icons{display:flex;align-items:center;gap:12px}
+.main-footer .social-icons a{
+    width:44px;height:44px;border:1px solid #39434d;
+    border-radius:50%;display:flex;align-items:center;
+    justify-content:center;color:#d9dce0;text-decoration:none;
+    font-size:18px;transition:.25s;
+}
+.main-footer .social-icons a:hover{
+    background:#e4bc3f;border-color:#e4bc3f;
+    color:#101010;transform:translateY(-3px);
+}
+.main-footer .app-section{display:flex;gap:15px;align-items:flex-start}
+.main-footer .app-icon{
+    width:55px;height:55px;min-width:55px;border-radius:10px;
+    background:#173957;border:1px solid #2c5574;color:#e4bc3f;
+    display:flex;align-items:center;justify-content:center;font-size:21px;
+}
+.main-footer .app-content h3{margin-bottom:7px}
+.main-footer .app-content p{
+    color:#aeb5c0;font-size:14px;line-height:21px;
+    margin:0 0 12px;
+}
+.main-footer .app-btn{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:9px 15px;background:#e4bc3f;color:#101010;
+    text-decoration:none;border-radius:6px;font-size:13px;font-weight:bold;
+}
+.main-footer .app-btn:hover{background:#f0c94d}
+.main-footer .location-section{min-width:0}
+.main-footer .location-section h3{margin-bottom:12px}
+.main-footer .map-card{
+    position:relative;display:block;width:100%;height:150px;
+    overflow:hidden;border:1px solid #173957;border-radius:10px;
+    background:#061d36;text-decoration:none;
+}
+.main-footer .map-card img{
+    width:100%;height:100%;object-fit:cover;display:block;
+    transition:.3s;
+}
+.main-footer .map-overlay{
+    position:absolute;inset:0;background:rgba(8,13,18,.58);
+    display:flex;align-items:center;justify-content:center;
+    gap:8px;color:#fff;font-size:15px;font-weight:600;
+    opacity:0;transition:.3s;
+}
+.main-footer .map-card:hover img{transform:scale(1.05)}
+.main-footer .map-card:hover .map-overlay{opacity:1}
+.main-footer .map-overlay i{color:#e4bc3f;font-size:20px}
+.main-footer .map-address{
+    color:#aeb5c0;font-size:12px;line-height:19px;margin:9px 0 0;
+}
+.main-footer .footer-bottom{
+    min-height:75px;padding:20px 3%;
+    display:flex;align-items:center;justify-content:space-between;
+    gap:25px;max-width:1400px;margin:0 auto;
+}
+.main-footer .footer-bottom p{
+    color:#c2c5ca;font-size:14px;margin:0;
+}
+.main-footer .footer-bottom-links{
+    display:flex;align-items:center;gap:10px;
+}
+.main-footer .footer-bottom-links a{
+    color:#c2c5ca;text-decoration:none;font-size:14px;
+}
+.main-footer .footer-bottom-links a:hover{color:#e4bc3f}
+.main-footer .footer-bottom-links span{color:#50575e}
+.main-footer .footer-tagline{
+    color:#e4bc3f;font-size:11px;font-weight:bold;
+    letter-spacing:1.5px;
+}
+
+@media (max-width:1000px){
+    .header{padding:8px 3%;flex-wrap:wrap}
+    .header .logo{width:120px;height:95px}
+    .nav{gap:20px}
+    .nav a{font-size:17px}
+    .actions{gap:16px}
+    .main-footer .footer-top{
+        grid-template-columns:1.3fr 1fr 1fr;gap:35px;
+    }
+    .main-footer .contact-column{grid-column:1 / -1}
+    .main-footer .footer-middle{grid-template-columns:1fr 1fr}
+    .main-footer .location-section{grid-column:1 / -1}
+}
+@media (max-width:650px){
+    .top-bar{
+        min-height:40px;padding:8px 12px;font-size:13px;
+        line-height:20px;flex-wrap:wrap;
+    }
+    .header{
+        min-height:92px;flex-direction:column;
+        justify-content:center;align-items:center;
+        padding:10px 12px 15px;gap:12px;
+    }
+    .header .logo{width:100px;height:80px}
+    .nav{
+        width:100%;gap:10px 18px;flex-wrap:wrap;
+        justify-content:center;
+    }
+    .nav a{font-size:14px}
+    .actions{justify-content:center;gap:18px}
+    .actions i{font-size:18px}
+    .login-btn{padding:8px 17px;font-size:14px}
+
+    .main-footer .footer-top{
+        grid-template-columns:1fr;padding:45px 25px;gap:35px;
+    }
+    .main-footer .contact-column{grid-column:auto}
+    .main-footer .footer-middle{
+        grid-template-columns:1fr;padding:35px 25px;gap:35px;
+    }
+    .main-footer .location-section{grid-column:auto}
+    .main-footer .map-card{height:220px}
+    .main-footer .footer-bottom{
+        flex-direction:column;text-align:center;
+        padding:25px 20px;gap:15px;
+    }
+    .main-footer .footer-bottom-links{
+        flex-wrap:wrap;justify-content:center;
+    }
+}
+@media (max-width:400px){
+    .header .logo{width:90px;height:72px}
+    .nav{gap:8px 12px}
+    .nav a{font-size:12px}
+    .main-footer .social-icons a{width:40px;height:40px}
+}

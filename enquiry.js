@@ -5,7 +5,7 @@
    - Respects single instance and prevents duplicate openings
 */
 (function(){
-    const ENQUIRY_POPUP_INTERVAL = 60 * 1000; // 60 seconds
+    const ENQUIRY_POPUP_INTERVAL = 30 * 1000; // 30 seconds
     const BACKEND_URL = 'https://pace-academy-backend.onrender.com/api/enquiries';
     const MODAL_ID = 'enquiryModal';
 
@@ -95,6 +95,8 @@
         el.root.classList.remove('active');
         el.root.setAttribute('aria-hidden','true');
         isOpen = false;
+        // restart the timer when user closes the popup
+        scheduleNext();
     }
 
     function scheduleNext(){

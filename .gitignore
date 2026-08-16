@@ -22,3 +22,4 @@ backend/uploads/
 # OS files
 .DS_Store
 Thumbs.db
+google-apps-script/
