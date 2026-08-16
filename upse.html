@@ -6,31 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UPSE</title>
     <link rel="stylesheet" href="./upse.css">
-    <link rel="stylesheet" href="./content-api.css">
+    <link rel="stylesheet" href="./enquiry.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
-    <div class="box">
-        <div class="header">
-            <img class="logo" src="./logo.png" alt="logo">
+    <div class="top-bar"><span class="new">NEW</span><span>UPSC Civil Services Preliminary Examination 2024 Notification
+            Released.</span><a href="#">View Details</a></div>
 
-            <div class="nav">
-                <a href="./index.html">Home</a>
-                <a href="./currentaffairs.html">Current Affairs</a>
-                <a href="./judgements.html">Judgements</a>
-                <a href="./editorial.html">Editorials</a>
-                <a href="./contact.html">Contact</a>
-            </div>
-            <div class="actions">
-                <i class="fa-regular fa-bell"></i>
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <a href="./login.html">
-                    <button class="login-btn">Login</button>
-                </a>
-            </div>
+    <header class="header">
+        <a href="./index.html"><img class="logo" src="./logo.png" alt="PACE Academy Logo"></a>
+        <nav class="nav">
+            <a href="./index.html">Home</a>
+            <a href="./currentaffairs.html">Current Affairs</a>
+            <a href="./judgements.html">Judgements</a>
+            <a href="./editorial.html">Editorials</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./about.html">About Us</a>
+        </nav>
+        <div class="actions">
+            <i class="fa-regular fa-bell"></i><i class="fa-solid fa-magnifying-glass"></i>
+            <a href="./login.html"><button class="login-btn">Login</button></a>
         </div>
-    </div>
+    </header>
     <hr>
     <section class="category-page">
 
@@ -126,7 +124,7 @@
                     Featured Insights
                 </h2>
 
-                <div class="featured-card" hidden>
+                <div class="featured-card">
 
                     <div class="featured-image">
 
@@ -158,164 +156,41 @@
 
                 </div>
 
-                <div
-                    class="pace-content-list"
-                    data-content-category-list
-                    data-category="UPSC"
-                    data-limit="6"
-                    data-pagination-target="#upscContentPagination"
-                ></div>
-                <div id="upscContentPagination" class="pace-content-pagination"></div>
-
             </div>
         </div>
 
     </section>
-    <script src="./content-api.js"></script>
-    <script src="./category-content.js"></script>
 </body>
 <footer class="main-footer">
 
-    <!-- NEWSLETTER -->
-    <div class="footer-newsletter">
+    <!-- =================================
+         FOOTER TOP
+    ================================= -->
 
-        <div class="newsletter-text">
+    <div class="footer-top">
 
-            <h3>Stay Ahead. Stay Updated.</h3>
+        <!-- BRAND -->
+        <div class="footer-brand">
+
+            <img src="./logo.png" alt="PACE Academy">
+
+            <h2>PACE ACADEMY</h2>
 
             <p>
-                Get the latest Law, Judiciary, UPSC and HPSC
-                updates directly to your inbox.
-            </p>
-
-        </div>
-
-
-        <div class="newsletter-form">
-
-            <input
-                type="email"
-                placeholder="Email Address"
-            >
-
-            <button>
-                Subscribe
-            </button>
-
-        </div>
-
-    </div>
-
-
-    <!-- FOOTER CONTENT -->
-    <div class="footer-content">
-
-
-        <!-- COMPANY -->
-        <div class="footer-company">
-
-            <div class="footer-logo">
-
-                <img
-                    src="./logo.png"
-                    alt="PACE Academy"
-                >
-
-                <div>
-                    <h2>PACE</h2>
-                    <h2>ACADEMY</h2>
-                </div>
-
-            </div>
-
-
-            <p class="company-description">
-
                 Empowering aspirants with reliable knowledge,
-                exam resources and the latest updates for
-                Law, Judiciary, UPSC and HPSC.
-
+                quality preparation resources and the latest
+                updates for Law, Judiciary, UPSC and HPSC.
             </p>
-
-
-            <h3 class="contact-heading">
-                Get In Touch
-            </h3>
-
-
-            <div class="contact-item">
-
-                <i class="fa-solid fa-phone"></i>
-
-                <span>
-                    +91 (800) 123-4567
-                </span>
-
-            </div>
-
-
-            <div class="contact-item">
-
-                <i class="fa-solid fa-envelope"></i>
-
-                <span>
-                    contact@paceacademy.edu
-                </span>
-
-            </div>
-
-
-            <div class="contact-item">
-
-                <i class="fa-solid fa-location-dot"></i>
-
-                <span>
-                    Knowledge Park, New Delhi, India
-                </span>
-
-            </div>
-
-
-            <!-- SOCIAL ICONS -->
-
-            <div class="social-icons">
-
-                <a href="#">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-
-                <a href="#">
-                    <i class="fa-brands fa-x-twitter"></i>
-                </a>
-
-                <a href="#">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-
-            </div>
 
         </div>
 
 
-
-        <!-- EXPLORE -->
+        <!-- QUICK LINKS -->
         <div class="footer-column">
 
-            <h3>Explore</h3>
+            <h3>Quick Links</h3>
 
-            <a href="./home.html">Home</a>
-
-            <a href="./lawandjudiciary.html">
-                Law & Judiciary
-            </a>
-
-            <a href="./upsc.html">
-                UPSC
-            </a>
-
-            <a href="./hpsc.html">
-                HPSC
-            </a>
+            <a href="./index.html">Home</a>
 
             <a href="./currentaffairs.html">
                 Current Affairs
@@ -329,12 +204,15 @@
                 Editorials
             </a>
 
-            <a href="./notes.html">
-                Notes
+            <a href="./contact.html">
+                Contact Us
+            </a>
+
+            <a href="./about.html">
+                About Us
             </a>
 
         </div>
-
 
 
         <!-- RESOURCES -->
@@ -342,8 +220,20 @@
 
             <h3>Resources</h3>
 
-            <a href="#">
-                Articles
+            <a href="./upse.html">
+                UPSC
+            </a>
+
+            <a href="./hpse.html">
+                HPSC / HCS
+            </a>
+
+            <a href="./bareacts.html">
+                AIBE
+            </a>
+
+            <a href="./category1law.html">
+                Judiciary & Law
             </a>
 
             <a href="#">
@@ -351,117 +241,273 @@
             </a>
 
             <a href="#">
-                Exam Updates
-            </a>
-
-            <a href="#">
                 Legal Updates
             </a>
 
-            <a href="#">
-                FAQs
+        </div>
+
+
+        <!-- CONTACT -->
+        <div class="footer-column contact-column">
+
+            <h3>Contact Us</h3>
+
+
+            <!-- PHONE -->
+            <div class="footer-contact-item">
+
+                <i class="fa-solid fa-phone"></i>
+
+                <div>
+
+                    <a href="#">
+                        9953847758
+                    </a>
+
+                    <a href="#">
+                        7982131472
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- EMAIL -->
+            <div class="footer-contact-item">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                <a href="#">
+                    paceacademy.info@gmail.com
+                </a>
+
+            </div>
+
+
+            <!-- ADDRESS -->
+            <div class="footer-contact-item">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <p>
+                    483/7, 2nd Floor,<br>
+                    New Railway Road,<br>
+                    Gurugram, Haryana - 122001
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =================================
+         SOCIAL + APP + LOCATION
+    ================================= -->
+
+    <div class="footer-middle">
+
+
+        <!-- =============================
+             SOCIAL MEDIA
+        ============================== -->
+
+        <div class="social-section">
+
+            <h3>Connect With Us</h3>
+
+            <div class="social-icons">
+
+
+                <!-- INSTAGRAM -->
+                <a
+                    href="https://www.instagram.com/paceacademyggn?igsh=bTR0Zjc4ZWk5dTk3"
+                    target="_blank"
+                    aria-label="Instagram"
+                >
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+
+                <!-- FACEBOOK -->
+                <a
+                    href="https://www.facebook.com/paceacademy.co.in/"
+                    target="_blank"
+                    aria-label="Facebook"
+                >
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+
+                <!-- YOUTUBE -->
+                <a
+                    href="https://youtube.com/@paceacademygurugram?si=ePC8rJE7RnkVK7Wx"
+                    target="_blank"
+                    aria-label="YouTube"
+                >
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+
+                <!-- LINKEDIN -->
+                <a
+                    href="https://share.google/a4UcCI10tt6DJ44DH"
+                    target="_blank"
+                    aria-label="LinkedIn"
+                >
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+
+                <!-- TELEGRAM -->
+                <a
+                    href="https://t.me/paceggn"
+                    target="_blank"
+                    aria-label="Telegram"
+                >
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =============================
+             PACE ACADEMY APP
+        ============================== -->
+
+        <div class="app-section">
+
+            <div class="app-icon">
+
+                <i class="fa-solid fa-mobile-screen-button"></i>
+
+            </div>
+
+
+            <div class="app-content">
+
+                <h3>PACE Academy App</h3>
+
+                <p>
+                    Learn anytime, anywhere.
+                    Download our official app.
+                </p>
+
+                <a
+                    href="https://exyhny.on-app.in/app/home?orgCode=exyhny"
+                    target="_blank"
+                    class="app-btn"
+                >
+
+                    Download App
+
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =============================
+             LOCATION
+        ============================== -->
+
+        <div class="location-section">
+
+            <h3>Visit Us</h3>
+
+
+            <!-- CLICKABLE MAP -->
+
+            <a
+                href="https://www.google.com/maps/search/?api=1&query=483%2F7%2C%202nd%20Floor%2C%20New%20Railway%20Road%2C%20Gurugram%2C%20Haryana%20122001"
+                target="_blank"
+                class="map-card"
+                aria-label="Open PACE Academy location in Google Maps"
+            >
+
+                <img
+                    src="./map.png"
+                    alt="PACE Academy Location Map"
+                >
+
+                <div class="map-overlay">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <span>
+                        View Location
+                    </span>
+
+                </div>
+
             </a>
 
-            <a href="#">
-                Contact Support
-            </a>
+
+            <p class="map-address">
+
+                483/7, 2nd Floor, New Railway Road,
+                Gurugram, Haryana - 122001
+
+            </p>
+
+        </div>
+
+    </div>
 
 
-            <h3 class="important-heading">
-                Important
-            </h3>
 
-            <a href="#">
-                About Us
-            </a>
+    <!-- =================================
+         BOTTOM FOOTER
+    ================================= -->
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 PACE ACADEMY.
+            All Rights Reserved.
+        </p>
+
+
+        <div class="footer-bottom-links">
 
             <a href="#">
                 Privacy Policy
             </a>
+
+            <span>|</span>
 
             <a href="#">
                 Terms & Conditions
             </a>
 
+            <span>|</span>
+
             <a href="#">
                 Disclaimer
             </a>
 
-            <a href="#">
-                Sitemap
-            </a>
-
         </div>
 
 
-
-        <!-- FIND US -->
-        <div class="find-us">
-
-            <h3>
-                Find Us
-            </h3>
-
-
-            <div class="map-container">
-
-                <img
-                    src="./map.png"
-                    alt="PACE Academy Location"
-                >
-
-            </div>
-
-
-            <button class="direction-btn">
-
-                Get Directions
-
-                <i class="fa-solid fa-diamond-turn-right"></i>
-
-            </button>
-
-        </div>
-
-    </div>
-
-
-
-    <!-- BOTTOM FOOTER -->
-
-    <div class="footer-bottom">
-
-        <p>
-            © 2026 PACE ACADEMY. All Rights Reserved.
-        </p>
-
-
-        <span>
+        <span class="footer-tagline">
             KNOWLEDGE • PREPARATION • SUCCESS
         </span>
-
-
-        <div class="bottom-links">
-
-            <a href="#">
-                Privacy Policy
-            </a>
-
-            <b>|</b>
-
-            <a href="#">
-                Terms
-            </a>
-
-            <b>|</b>
-
-            <a href="#">
-                Sitemap
-            </a>
-
-        </div>
 
     </div>
 
 </footer>
+</body>
+    <script src="./enquiry.js"></script>
+
+</body>
 </html>
