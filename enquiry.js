@@ -87,6 +87,8 @@
         isOpen = true;
         const first = el.form.querySelector('input, select, textarea');
         if(first) first.focus();
+        // prevent background scrolling on mobile
+        document.body.classList.add('modal-open');
     }
 
     function closeModal(){
@@ -95,6 +97,7 @@
         el.root.classList.remove('active');
         el.root.setAttribute('aria-hidden','true');
         isOpen = false;
+        document.body.classList.remove('modal-open');
         // restart the timer when user closes the popup
         scheduleNext();
     }

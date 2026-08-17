@@ -1,0 +1,113 @@
+/* Shared responsive adjustments for mobile devices */
+
+/* Ensure images and content never overflow */
+html, body, main, section, header, footer { max-width:100%; overflow-x:hidden; }
+
+/* Small tweaks for header/navigation */
+.nav-toggle {
+    display: none;
+    background: transparent;
+    border: 0;
+    font-size: 24px;
+    cursor: pointer;
+    color: #111;
+    position: relative;
+    z-index: 10001;
+    touch-action: manipulation;
+    padding: 6px 8px;
+}
+
+@media (max-width: 768px) {
+    .header { padding: 8px 12px; align-items: center; }
+    .logo { width: 120px; height: auto; }
+    .nav { display: none; }
+    .nav-toggle { display: block; }
+    .actions { gap: 8px; }
+    /* Ensure hamburger appears to the right of the Login button on mobile
+       Visual order: Logo | Bell/Search | Login | ☰ (nav-toggle) */
+    .header .logo { order: 1; }
+    .header .actions { order: 2; display: flex; align-items: center; }
+    .header .nav-toggle { order: 3; margin-left: 6px; }
+    body.nav-open .nav {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 74px 16px 20px;
+        background: #fff;
+        z-index: 9999;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    }
+    body.nav-open .nav a { padding: 12px 10px; border-bottom: 1px solid #f0f0f0; font-size:18px; }
+    .nav a { white-space: normal; text-align: left; }
+}
+
+/* Hero and search adjustments */
+@media (max-width: 650px) {
+    .hero { padding: 28px 16px; gap: 28px; }
+    .hero-left h1 { font-size: 26px; }
+    .hero-search input { font-size: 15px; }
+    .hero-search button { width: 86px; }
+}
+
+/* Categories/card grids */
+@media (max-width: 900px) {
+    .category-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+    .category-grid { grid-template-columns: 1fr; }
+    .category-title { font-size: 16px; height: auto; padding: 12px; }
+}
+
+/* Stats: responsive stacking to avoid overflow */
+@media (max-width: 900px) {
+    .stats { grid-template-columns: repeat(2, 1fr); gap: 12px; padding: 12px 4%; }
+    .stat-box { border-right: 0; min-height: 64px; padding: 12px; justify-content: flex-start; }
+}
+@media (max-width: 480px) {
+    .stats { grid-template-columns: 1fr; gap: 10px; padding: 10px 4%; }
+    .stat-box { display:flex; align-items:center; justify-content:flex-start; gap:12px; padding:10px; border-right:0; border-bottom:1px solid #eee; }
+    .stat-box:last-child { border-bottom:0; }
+}
+
+/* Founder cards stack on mobile */
+@media (max-width: 760px) {
+    .founder-card, .founder-card-two { grid-template-columns: 1fr !important; }
+    .founder-photo { min-height: 0; max-height: 420px; }
+    .founder-photo img { width:100%; height:auto; object-fit:cover; }
+    .founder-content { padding: 20px; }
+    .founder-photo-badge { left: 12px; bottom: 12px; }
+}
+
+/* Enquiry modal improvements */
+.enquiry-dialog { max-width: 500px; width: calc(100% - 24px); max-height: calc(100vh - 48px); overflow:auto; }
+body.modal-open { overflow: hidden; }
+.enquiry-close { touch-action: manipulation; }
+
+/* Enquiry CTA tappable size on mobile */
+@media (max-width: 480px) {
+    .enquiry-cta-btn, #openEnquiryBtn { min-height: 44px; height: auto; padding: 10px 14px; display:inline-flex; align-items:center; justify-content:center; }
+    .enquiry-cta-btn { line-height: 1; }
+}
+
+/* Contact page stacks */
+@media (max-width: 900px) {
+    .contact-container { grid-template-columns: 1fr; gap: 20px; }
+    .map-box { height: 260px; }
+}
+
+/* Footer stacking */
+@media (max-width: 768px) {
+    .footer-content, .footer-connect { grid-template-columns: 1fr !important; padding: 36px 5% !important; }
+    .social-icons a { width:40px; height:40px; }
+}
+
+/* Typography: keep readable sizes */
+@media (max-width: 420px) {
+    body { font-size: 15px; }
+    .hero-left h1 { font-size: 22px; }
+}
