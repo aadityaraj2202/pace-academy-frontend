@@ -54,6 +54,20 @@ html, body, main, section, header, footer { max-width:100%; overflow-x:hidden; }
     .hero-search button { width: 86px; }
 }
 
+/* About page: ensure intro and course cards stack on small screens without changing desktop */
+@media (max-width: 900px) {
+    .about-intro { grid-template-columns: 1fr; gap: 24px; padding: 60px 5%; }
+    .courses-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .course-card { padding: 22px 18px; }
+    .trust-box { grid-template-columns: 1fr; padding: 30px; }
+}
+
+@media (max-width: 480px) {
+    .courses-grid { grid-template-columns: 1fr; }
+    .course-card { padding: 18px 14px; }
+    .about-intro { padding: 40px 4%; }
+}
+
 /* Categories/card grids */
 @media (max-width: 900px) {
     .category-grid { grid-template-columns: repeat(2, 1fr); }
