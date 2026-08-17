@@ -2,7 +2,7 @@ const CONTENT_CATEGORIES = [
   "Law & Judiciary",
   "UPSC",
   "HPSC",
-  "Bare Acts",
+  "AIBE",
   "Current Affairs",
   "Judgements",
   "Editorials",

@@ -119,6 +119,34 @@ html, body, main, section, header, footer { max-width:100%; overflow-x:hidden; }
 /* Founder cards stack on mobile */
 @media (max-width: 760px) {
     .founder-card, .founder-card-two { grid-template-columns: 1fr !important; }
+    .founder-card-two .founder-photo,
+    .founder-card-two .founder-content {
+        grid-column: auto !important;
+        grid-row: auto !important;
+    }
+    .founder-card-two .founder-photo {
+        display: flex;
+        flex-direction: column;
+        min-height: 0;
+        max-height: none;
+    }
+    .founder-card-two .founder-photo img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+    }
+    .founder-card-two .founder-photo-badge {
+        position: static;
+        margin: 12px 20px 0;
+        align-self: flex-start;
+        left: auto;
+        bottom: auto;
+    }
+    .founder-card-two .founder-content {
+        width: 100%;
+        padding: 20px;
+    }
     .founder-photo { min-height: 0; max-height: 420px; }
     .founder-photo img { width:100%; height:auto; object-fit:cover; }
     .founder-content { padding: 20px; }
