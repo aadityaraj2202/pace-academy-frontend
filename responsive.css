@@ -3,6 +3,34 @@
 /* Ensure images and content never overflow */
 html, body, main, section, header, footer { max-width:100%; overflow-x:hidden; }
 
+/* Shared footer credit styling reused across public pages */
+.footer-credit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #c2c5ca;
+    font-size: 12px;
+    line-height: 1.4;
+    letter-spacing: 0.2px;
+    opacity: 0.9;
+    margin-top: 12px;
+    flex-wrap: wrap;
+}
+
+.footer-credit-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #e4bc3f;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.footer-credit-link i {
+    font-size: 12px;
+}
+
 /* Small tweaks for header/navigation */
 .nav-toggle {
     display: none;
