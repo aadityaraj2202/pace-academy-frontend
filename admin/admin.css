@@ -79,6 +79,34 @@ a {
   background: #ffffff;
 }
 
+.intro-brand {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  gap: 14px;
+}
+
+.brand-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  line-height: 1.1;
+}
+
+.brand-copy span {
+  display: block;
+  font-size: 0.95rem;
+  letter-spacing: 0.11em;
+}
+
+.brand-copy small {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
 .auth-intro h1 {
   max-width: 620px;
   margin: 34px 0 16px;
@@ -104,8 +132,52 @@ a {
 
 .auth-card {
   width: 100%;
-  max-width: 360px;
+  max-width: 380px;
   margin: 0 auto;
+  padding: 28px 26px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 14px 36px rgba(17, 34, 68, 0.08);
+}
+
+.auth-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 22px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #edf1f8;
+}
+
+.auth-brand img {
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+  padding: 6px;
+  border: 1px solid #e4ebff;
+  border-radius: 12px;
+  background: #f6f8ff;
+}
+
+.auth-brand-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.auth-brand-copy strong {
+  color: var(--navy);
+  font-size: 1.05rem;
+  letter-spacing: 0.12em;
+}
+
+.auth-brand-copy span {
+  color: var(--blue);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
 }
 
 .eyebrow {
@@ -129,9 +201,57 @@ a {
 }
 
 .auth-card > p:not(.eyebrow) {
-  margin: 10px 0 28px;
+  margin: 10px 0 24px;
   color: var(--muted);
   line-height: 1.55;
+}
+
+#loginForm {
+  display: grid;
+  gap: 0;
+}
+
+.field-spaced {
+  margin-top: 18px;
+}
+
+.login-button {
+  width: 100%;
+  margin-top: 24px;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  margin-top: 18px;
+  padding: 10px 12px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  color: var(--navy);
+  font-size: 0.92rem;
+  font-weight: 700;
+  text-align: center;
+  transition: background-color 0.18s ease, color 0.18s ease, border-color 0.18s ease, transform 0.18s ease;
+}
+
+.back-link span {
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.back-link:hover,
+.back-link:focus-visible {
+  color: var(--blue);
+  border-color: rgba(22, 101, 255, 0.18);
+  background: rgba(22, 101, 255, 0.05);
+  outline: none;
+}
+
+.back-link:focus-visible {
+  box-shadow: 0 0 0 3px rgba(22, 101, 255, 0.15);
 }
 
 .auth-footer {

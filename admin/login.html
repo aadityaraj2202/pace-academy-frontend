@@ -10,9 +10,12 @@
 
 <body class="auth-page">
   <section class="auth-intro">
-    <div class="brand">
+    <div class="brand intro-brand" aria-label="PACE Academy brand">
       <img src="../logo.png" alt="PACE Academy logo">
-      <span>PACE ACADEMY</span>
+      <div class="brand-copy">
+        <span>PACE ACADEMY</span>
+        <small>Administration Portal</small>
+      </div>
     </div>
     <h1>Manage learning content with clarity.</h1>
     <p>Sign in to publish, update and organize educational content for PACE Academy.</p>
@@ -20,6 +23,14 @@
 
   <main class="auth-panel">
     <section class="auth-card" aria-labelledby="loginHeading">
+      <div class="auth-brand" aria-label="PACE Academy administration portal">
+        <img src="../logo.png" alt="PACE Academy logo">
+        <div class="auth-brand-copy">
+          <strong>PACE ACADEMY</strong>
+          <span>ADMIN PORTAL</span>
+        </div>
+      </div>
+
       <p class="eyebrow">Admin portal</p>
       <h2 id="loginHeading">Welcome back</h2>
       <p>Use your administrator account to continue.</p>
@@ -32,15 +43,18 @@
           <input id="email" type="email" autocomplete="email" required>
         </div>
 
-        <div class="field" style="margin-top: 18px;">
+        <div class="field field-spaced">
           <label for="password">Password</label>
           <input id="password" type="password" autocomplete="current-password" required>
         </div>
 
-        <button class="button button-primary" type="submit" style="width: 100%; margin-top: 24px;">Login</button>
+        <button class="button button-primary login-button" type="submit">Login</button>
       </form>
 
-      <a href="https://paceiasjudiciary.com">Back to PACE Academy website</a>
+      <a class="back-link" href="https://paceiasjudiciary.com" aria-label="Back to PACE Academy Website">
+        <span aria-hidden="true">←</span>
+        Back to PACE Academy Website
+      </a>
     </section>
   </main>
 
